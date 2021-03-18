@@ -19,7 +19,13 @@
  */
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-
+// use the ext object to add any properties to the project
+project.ext {
+    compileSdk = 29
+    buildTools = '29.0.2'
+    minSdk = 17
+    target = 29
+}
 buildscript {
     ext.kotlin_version = '1.4.10'
     project.apply from: "${rootDir}/constants.gradle"
